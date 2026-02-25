@@ -5,21 +5,21 @@
 class Ldt < Formula
   desc "Interactive no-code terminal CLI for the Longitudinal Depression Trajectories toolkit."
   homepage "https://github.com/Longitudinal-Depression-Toolkit/ldt-toolkit"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Longitudinal-Depression-Toolkit/CLI/releases/download/v0.0.3/ldt_0.0.3_darwin_amd64.tar.gz"
-      sha256 "83e7862fa76473c887994254b73096ce77abf0e9126cffdbd4f5d65069ed2277"
+      url "https://github.com/Longitudinal-Depression-Toolkit/CLI/releases/download/v0.0.4/ldt_0.0.4_darwin_amd64.tar.gz"
+      sha256 "0f67dde6f30d994a023755a06b21f0a35c6c45f6a97b563d9ef1be85cdfcf6c6"
 
       define_method(:install) do
         bin.install "ldt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Longitudinal-Depression-Toolkit/CLI/releases/download/v0.0.3/ldt_0.0.3_darwin_arm64.tar.gz"
-      sha256 "bf4c98b3c10595c37b39039d83fe8bef58706fc145bb75bdfc925179db0e9e72"
+      url "https://github.com/Longitudinal-Depression-Toolkit/CLI/releases/download/v0.0.4/ldt_0.0.4_darwin_arm64.tar.gz"
+      sha256 "4e55aeea9c2c9c282f47250a311af729a8fa8c61c19edcfdb7674599251eba54"
 
       define_method(:install) do
         bin.install "ldt"
@@ -29,15 +29,15 @@ class Ldt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Longitudinal-Depression-Toolkit/CLI/releases/download/v0.0.3/ldt_0.0.3_linux_amd64.tar.gz"
-      sha256 "ea5eb44bc948de04a115ca04b6a9f3a3cc6c7108e51af0deed02a76000ce2761"
+      url "https://github.com/Longitudinal-Depression-Toolkit/CLI/releases/download/v0.0.4/ldt_0.0.4_linux_amd64.tar.gz"
+      sha256 "a69f8e027a9d555fabd9cf62a6a20edf6a8c3f19db24de28da536e3b08821382"
       define_method(:install) do
         bin.install "ldt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Longitudinal-Depression-Toolkit/CLI/releases/download/v0.0.3/ldt_0.0.3_linux_arm64.tar.gz"
-      sha256 "2d6b9f2103df7f3ecb810c1c64132ec763b21b275f78248626f4453b4271fc6b"
+      url "https://github.com/Longitudinal-Depression-Toolkit/CLI/releases/download/v0.0.4/ldt_0.0.4_linux_arm64.tar.gz"
+      sha256 "60928afcde4f2621244dc125ee107d7555e37c7bff4952ba637c619bf444e73b"
       define_method(:install) do
         bin.install "ldt"
       end
